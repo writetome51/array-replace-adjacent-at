@@ -8,16 +8,15 @@
   },
   "keywords": [
     "array",
-   "replace",
-   "adjacent",
-   "items",
+    "replace",
+    "adjacent",
+    "items",
     "manipulation"
   ],
   "author": "Steve Thompson",
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "basic-data-handling": "latest",
     "error-if-values-are-not-arrays": "latest",
     "@writetome51/array-and-index-validation": "latest"
   }
