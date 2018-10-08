@@ -1,0 +1,24 @@
+{
+  "name": "@writetome51/array-replace-adjacent-at",
+  "version": "1.0.0",
+  "description": "array-handling functions that replace items in the array",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "array",
+   "replace",
+   "adjacent",
+   "items",
+    "manipulation"
+  ],
+  "author": "Steve Thompson",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {
+    "basic-data-handling": "latest",
+    "error-if-values-are-not-arrays": "latest",
+    "@writetome51/array-and-index-validation": "latest"
+  }
+}
