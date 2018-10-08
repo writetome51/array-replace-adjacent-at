@@ -1,5 +1,5 @@
 {
-  "name": "@writetome51/array-replace-adjacent-at",
+  "name": "@writetome51/array-replace-at",
   "version": "1.0.0",
   "description": "array-handling functions that replace items in the array",
   "main": "",
