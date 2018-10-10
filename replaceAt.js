@@ -1,10 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var error_if_values_are_not_arrays_1 = require("error-if-values-are-not-arrays");
-var ifIndexValid_getActionResult_1 = require("@writetome51/array-and-index-validation/ifIndexValid_getActionResult");
+var errorIfNotArray_1 = require("basic-data-handling/errorIfNotArray");
+var _replaceAdjacentItems_1 = require("@writetome51/array-replace-adjacent-items/_replaceAdjacentItems");
+// starting at index, replaces same number of items as the number of items in newValues.
 // index can be negative or positive.
 function replaceAt(index, newValues, array) {
-    error_if_values_are_not_arrays_1.errorIfValuesAreNotArrays([newValues, array]);
-    ifIndexValid_getActionResult_1.ifIndexValid_getActionResult(index, function () { return array.splice.apply(array, [index, newValues.length].concat(newValues)); }, array);
+    errorIfNotArray_1.errorIfNotArray(newValues);
+    // The other parameters, index and array, are type-checked here:
+    _replaceAdjacentItems_1._replaceAdjacentItems(index, newValues.length, newValues, array);
 }
 exports.replaceAt = replaceAt;

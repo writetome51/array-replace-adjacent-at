@@ -1,6 +1,6 @@
 {
   "name": "@writetome51/array-replace-at",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "array-handling functions that replace items in the array",
   "main": "",
   "scripts": {
@@ -17,7 +17,7 @@
   "license": "MIT",
   "devDependencies": {},
   "dependencies": {
-    "error-if-values-are-not-arrays": "latest",
-    "@writetome51/array-and-index-validation": "latest"
+    "basic-data-handling": "latest",
+    "@writetome51/array-replace-adjacent-items": "latest"
   }
 }

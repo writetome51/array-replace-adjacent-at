@@ -1,13 +1,13 @@
-import { errorIfValuesAreNotArrays } from 'error-if-values-are-not-arrays';
-import { ifIndexValid_getActionResult }
-	from '@writetome51/array-and-index-validation/ifIndexValid_getActionResult';
+import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
+import { _replaceAdjacentItems } from '@writetome51/array-replace-adjacent-items/_replaceAdjacentItems';
 
 
+// starting at index, replaces same number of items as the number of items in newValues.
 // index can be negative or positive.
 
 export function replaceAt(index, newValues: any[], array): void {
-	errorIfValuesAreNotArrays([newValues, array]);
-	ifIndexValid_getActionResult(
-		index, () => array.splice(index, newValues.length, ...newValues), array
-	);
+	errorIfNotArray(newValues);
+
+	// The other parameters, index and array, are type-checked here:
+	_replaceAdjacentItems(index, newValues.length, newValues, array);
 }
