@@ -1,8 +1,8 @@
 {
-  "name": "@writetome51/array-replace-at",
-  "version": "1.0.1",
-  "description": "array-handling functions that replace items in the array",
-  "main": "",
+  "name": "@writetome51/array-replace-adjacent-at",
+  "version": "1.0.2",
+  "description": "Replaces adjacent items in the array with same number of new adjacent items",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
