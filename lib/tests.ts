@@ -6,9 +6,6 @@ let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 replaceAdjacentAt(1, [10], arr);
 console.log(arr);
 
-replaceAdjacentAt(1, [20], arr);
-console.log(arr);
-
 replaceAdjacentAt(-1, [20], arr);
 console.log(arr);
 
@@ -18,7 +15,7 @@ console.log(arr);
 replaceAdjacentAt(6, ['a', 'b', 'c'], arr);
 console.log(arr);
 
-replaceAdjacentAt(-13, ['a', {prop: 1}, 'c'], arr);
+replaceAdjacentAt(6, ['a', {prop: 1}, 'c'], arr);
 console.log(arr);
 
 
