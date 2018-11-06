@@ -15,9 +15,6 @@ console.log(arr);
 replaceAdjacentAt(0, [20, 21, 22, 23], arr);
 console.log(arr);
 
-replaceAdjacentAt(-1, [21, 22, 23, 24], arr);
-console.log(arr);
-
 replaceAdjacentAt(6, ['a', 'b', 'c'], arr);
 console.log(arr);
 
