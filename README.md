@@ -2,10 +2,10 @@ To include in your project:
 
 import { replaceAdjacentAt } from '@writetome51/array-replace-adjacent-at';
 
+replaceAdjacentAt(index, newValues: any[], array): void
+
 This function replaces adjacent items in the array with the same number of new adjacent items  
 beginning at a chosen index.  The index can be negative or positive.
-
-replaceAdjacentAt(index, newValues: any[], array);
 
 Examples:
 
