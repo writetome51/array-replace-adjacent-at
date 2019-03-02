@@ -1,9 +1,10 @@
 import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
-import { _replaceAdjacentItems } from '@writetome51/array-replace-adjacent-items/_replaceAdjacentItems';
+import { _replaceAdjacentItems } from '@writetome51/array-replace-adjacent-items';
 
 
-// starting at index, replaces same number of items as the number of items in newValues.
-// index can be negative or positive.
+// Replaces adjacent items, beginning at `index`, with the same number
+// of `newValues`, in `array`.  `index` can be negative or positive.
+// The number of adjacent items that get replaced equals `newValues.length`.
 
 export function replaceAdjacentAt(index, newValues: any[], array): void {
 	errorIfNotArray(newValues);

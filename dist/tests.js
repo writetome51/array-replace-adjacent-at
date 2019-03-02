@@ -1,16 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var replaceAdjacentAt_1 = require("./replaceAdjacentAt");
+var _1 = require(".");
 var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-replaceAdjacentAt_1.replaceAdjacentAt(1, [10], arr);
+_1.replaceAdjacentAt(1, [10], arr);
 console.log(arr);
-replaceAdjacentAt_1.replaceAdjacentAt(-1, [20], arr);
+_1.replaceAdjacentAt(-1, [20], arr);
 console.log(arr);
-replaceAdjacentAt_1.replaceAdjacentAt(0, [20, 21, 22, 23], arr);
+_1.replaceAdjacentAt(0, [20, 21, 22, 23], arr);
 console.log(arr);
-replaceAdjacentAt_1.replaceAdjacentAt(6, ['a', 'b', 'c'], arr);
+_1.replaceAdjacentAt(6, ['a', 'b', 'c'], arr);
 console.log(arr);
-replaceAdjacentAt_1.replaceAdjacentAt(6, ['a', { prop: 1 }, 'c'], arr);
+_1.replaceAdjacentAt(6, ['z', { prop: 1 }, 'c'], arr);
 console.log(arr);
 // should trigger error:
 //  replaceAdjacentAt('', [1], arr);

@@ -1,10 +1,11 @@
 {
   "name": "@writetome51/array-replace-adjacent-at",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Replaces adjacent items in the array with same number of new adjacent items",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,7 @@
   "homepage": "https://github.com/writetome51/array-replace-adjacent-at#readme",
   "devDependencies": {},
   "dependencies": {
-    "basic-data-handling": "~1.0.13",
-    "@writetome51/array-replace-adjacent-items": "~1.0.1"
+    "basic-data-handling": "~1.0.15",
+    "@writetome51/array-replace-adjacent-items": "~1.0.4"
   }
 }

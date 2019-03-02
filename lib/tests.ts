@@ -1,4 +1,4 @@
-import { replaceAdjacentAt } from './replaceAdjacentAt';
+import { replaceAdjacentAt } from '.';
 
 
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -15,7 +15,7 @@ console.log(arr);
 replaceAdjacentAt(6, ['a', 'b', 'c'], arr);
 console.log(arr);
 
-replaceAdjacentAt(6, ['a', {prop: 1}, 'c'], arr);
+replaceAdjacentAt(6, ['z', {prop: 1}, 'c'], arr);
 console.log(arr);
 
 
