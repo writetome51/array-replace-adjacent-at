@@ -1,4 +1,4 @@
-import { errorIfNotArray } from 'basic-data-handling/errorIfNotArray';
+import { errorIfNotArray } from 'error-if-not-array';
 import { _replaceAdjacentItems } from '@writetome51/array-replace-adjacent-items';
 
 
