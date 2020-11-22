@@ -2,24 +2,22 @@
 
 Replaces adjacent items, beginning at `index`, with the same number  
 of `newValues`, in `array`.  
-`index` can be negative or positive.   
-The number of adjacent items that get replaced equals `newValues.length`.
+`index` can be negative or positive. 
 
-Examples:
-```
+
+## Examples:
+```js
 let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-replaceAdjacentAt(1, [20], arr);  
-// arr is now  [ 1, 20, 3, 4, 5, 6, 7, 8, 9, 10 ]
-
 replaceAdjacentAt(-1, [20], arr);  
-// arr is now  [ 1, 20, 3, 4, 5, 6, 7, 8, 9, 20 ]
+// arr is now  [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 20 ]
 
 replaceAdjacentAt(0, [20, 21, 22, 23], arr);  
 // arr is now  [ 20, 21, 22, 23, 5, 6, 7, 8, 9, 20 ]
 
-replaceAdjacentAt(6, ['a','b','c'], arr);  
-// arr is now  [ 20, 21, 22, 23, 5, 6, 'a', 'b', 'c', 20 ]
+// This errors because arr only has 2 items left at index 8:
+replaceAdjacentAt(8, ['z', 'b', 'c'], arr);
+// Error: 'the array does not have enough items to fulfill your request'
 ```
 
 ## Installation
@@ -28,9 +26,5 @@ replaceAdjacentAt(6, ['a','b','c'], arr);
 
 ## Loading
 ```
-// if using TypeScript:
 import { replaceAdjacentAt } from '@writetome51/array-replace-adjacent-at';
-// if using ES5 JavaScript:
-var  replaceAdjacentAt = 
-    require('@writetome51/array-replace-adjacent-at').replaceAdjacentAt;
 ```
