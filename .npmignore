@@ -1,3 +1,2 @@
-lib/
 .idea/
-dist/tests.js
+tests.js
