@@ -22,7 +22,9 @@
     "url": "https://github.com/writetome51/array-replace-adjacent-at/issues"
   },
   "homepage": "https://github.com/writetome51/array-replace-adjacent-at#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "@writetome51/is-match": ">=0.0.1"
+  },
   "dependencies": {
     "@writetome51/validate-adjacent-items-operation-args": ">=0.0.1"
   }
