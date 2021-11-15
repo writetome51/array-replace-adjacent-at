@@ -7,10 +7,7 @@ import {validateAdjacentItemsOperationArgs}
 export const replaceAdjacentAt = (startingIndex, newValues, array) => {
 	const newValsLength = newValues.length;
 	validateAdjacentItemsOperationArgs(startingIndex, newValsLength, array);
-	startingIndex = (startingIndex < 0 ? array.length + startingIndex : startingIndex);
+	if (startingIndex < 0) startingIndex += array.length;
 
-	for (let i = 0; i < newValsLength; ++i) {
-		array[startingIndex] = newValues[i];
-		++startingIndex;
-	}
+	for (let i = 0; i < newValsLength; ++startingIndex)  array[startingIndex] = newValues[i++];
 };
